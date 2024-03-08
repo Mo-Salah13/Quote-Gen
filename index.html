@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Quote Gen</title>
+</head>
+<body class="text-center ">
+    <div class="container ">
+        <div class="row  ">
+            <div class="col-md-12 mt-5">
+                <svg width="500" height="150" style="padding-left: 3%;">
+                    <path id="curve" d="M 0 150 C 0 120, 130 0, 450 140"></path>
+                    <text class="text" text-anchor="middle">
+                        <textPath class="text_path" href="#curve" startOffset="50%">
+                            Quote of the Day
+                            <div class="border"></div>
+                        </textPath>
+                    </text>
+                </svg>
+                <h2 class="my-4">what are you waiting  for !</h2>
+            <button type="button" onclick="generator()" class="btn btn-light w-0 mx-auto my-3">Don't Click Me</button>
+            <div class="text-center" id="quoteDisplay">
+            </div>
+            <div id="Author"></div>
+            </div>
+        </div>
+    </div>
+    <script src="Main.js/bootstrap.bundle.min.js"></script>
+    <script src="Main.js/script.js"></script>
+</body>
+</html>
